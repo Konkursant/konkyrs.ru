@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>This is the title</title>
+		<link rel="stylesheet" href="styles1.css">
+	</head>
+	<body>
+
+<div id="wrapper">
+	<div id="header">
+
+
+ <div class="logo">Главная</div>
+  <div class="header-buttons">
+<a href="index1.html">
+    <button class="header-btn2" onclick="showInfo('info1')">Условия</button>
+<a href="index2.html">
+    <button class="header-btn3" onclick="showInfo('info2')">Направления</button></a>
+  <a href="index.html"><button class="back-button" onclick="showinfo('info1')">
+      ← Назад
+    </button></a>
+    <a href="index4.html">
+    	<button class="header-btn5" onclick="showInfo('info4')">Критерии</button>
+    </a>
+  </div>
+</div>
+	<div id="container">
+		<div id="content">
+			<h1><b>Контакты</b></h1>
+<p></p><p>Свяжитесь с нами!
+
+<p></p><p>Если у вас возникли вопросы по оформлению заявки, выбору номинации или техническим требованиям к проектам, — не стесняйтесь обращаться! Мы всегда готовы помочь и подсказать.
+
+<p></p><p><p></p><p>По всем организационным вопросам:
+<p></p><p>📞 Телефон для справок: 7-14-32
+<p></p><p>(звоните в рабочее время с 9:00 до 18:00)
+
+<p></p><p>Ответственный секретарь конкурса:
+<p></p><p>👤 Стюкова Наталья Викторовна
+<p></p><p>📱 Мобильный телефон: +7 (904) 929-72-14
+<p></p><p>(также доступен в WhatsApp и Telegram для оперативной связи)
+
+<p></p><p>Вы можете позвонить или написать — Наталья Викторовна с удовольствием ответит на все ваши вопросы о конкурсе.
+
+		</div>
+			<div id="sidebar">
+		 <button class="header-btn1" onclick="showInfo()">Сроки проведения</button>
+<div id="info" class="info-block">
+  <h3>Важная информация!</h3>
+<i>проекты разрабатываются в несколько этапов: 
+<p></p>-	заявка об участии в конкурсе подаётся до 24 января 2026 года в организационный комитет конкурса по адресу: проспект Ленина 200, кабинет № 214, т. 7-14-32, факс: 7-19-94 или по email: atpk-it@yandex.ru
+<p></p>-	отборочный тур проектов проводится с 24 января по 07 февраля 2026 г., для этого нужно подготовить презентацию проектов и описание проектов по приведенной схеме;
+<p></p>-	с 07 февраля по 12 февраля 2026 г. продолжение работ над проектами, подготовка к заключительному туру и предоставление окончательного варианта проекта;
+<p></p>-	итоговая защита проектов проводится в Нижегородском экономико-технологическом колледже (13 февраля 2026 г.);
+<p></p>-	в случае сложной эпидемиологической обстановки финал конкурса проводится в заочной форме, заслушивание докладов победителей и награждение – дистанционно, с использованием видеоконференцсвязи.</i>
+
+</div>
+<script>
+function showInfo() {
+  document.getElementById("info").classList.toggle("show");
+}
+</script>
+<button class="scroll-to-top" onclick="scrollToTop()" id="scrollBtn">↑</button>
+
+<script>
+// Показать кнопку при прокрутке
+window.onscroll = function() {
+  var btn = document.getElementById("scrollBtn");
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    btn.classList.remove("hidden");
+  } else {
+    btn.classList.add("hidden");
+  }
+};
+
+// Плавная прокрутка наверх
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+</script>
+
+<div id="elem"></div>
+	</body>
+</html>
